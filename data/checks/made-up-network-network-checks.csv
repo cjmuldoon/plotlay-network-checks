@@ -1,0 +1,25 @@
+No.,Check,Severity,What the check found,Ids,Latitude,Longitude
+1,Transformer attribute disagrees with the lines,error,"m_0001 says it is fed from tr_12, but the lines join it to tr_07.",m_0001,-34.9790177,138.5953478
+2,Meter not fed by any transformer,error,m_0005 is joined to lines that reach no transformer.,m_0005,-34.9791972,138.5987696
+3,Service line that joins nothing,error,"Service line s_0005 has an end that joins nothing (no meter, no line) within 0.5 m.",s_0005,-34.979203,138.5986439
+4,Duplicate id,error,2 features share the id m_0006.,m_0006; m_0006,-34.9792104,138.5984853
+5,Meter joined to no line,error,m_0042 is not on any line. The nearest line is 1.2 m away; the tolerance is 0.5 m.,m_0042,-34.9797968,138.59303
+6,Service line that joins nothing,error,"Service line s_0042 has an end that joins nothing (no meter, no line) within 0.5 m.",s_0042,-34.9798076,138.5930309
+7,Meters fed from two or more transformers,error,"25 meters (m_0151, m_0153, m_0154, m_0158, m_0186, m_0187, ...) are joined to 2 transformers, tr_11 and tr_18: a tie between them is closed or missing a switch.",m_0151; m_0153; m_0154; m_0158; m_0186; m_0187; m_0190; m_0207; m_0211; m_0214; m_0215; m_0223; m_0227; m_0230; m_0231; m_0232; m_0235; m_0240; m_0242; m_0243; m_0245; m_0254; m_0255; m_0286; m_0290,-34.9812297,138.5979407
+8,Loop in a network meant to be radial,error,"lv_0422 closes a loop of 766 m through sw_lv02 (no state), tr_11, tr_18: a radial network should have an open point (a switch left open) on it.",lv_0422; sw_lv02,-34.9824784,138.5972452
+9,Meter not fed by any transformer,error,m_0582 is joined to lines that reach no transformer.,m_0582,-34.9851441,138.5925376
+10,Meter not fed by any transformer,error,m_0605 is joined to lines that reach no transformer.,m_0605,-34.9853778,138.5925587
+11,Transformer attribute disagrees with the lines,error,"m_0755 says it is fed from tr_13, but the lines join it to tr_06.",m_0755,-34.9868615,138.596545
+12,Meters fed from two or more transformers,error,"34 meters (m_1075, m_1078, m_1080, m_1081, m_1084, m_1088, ...) are joined to 2 transformers, tr_32 and tr_16: a tie between them is closed or missing a switch.",m_1075; m_1078; m_1080; m_1081; m_1084; m_1088; m_1090; m_1092; m_1093; m_1094; m_1096; m_1098; m_1111; m_1112; m_1113; m_1114; m_1115; m_1116; m_1118; m_1120; m_1121; m_1123; m_1125; m_1127; m_1129; m_1134; m_1135; m_1139; m_1141; m_1143; m_1146; m_1147; m_1171; m_1172,-34.989431,138.5963555
+13,Loop in a network meant to be radial,error,"lv_0440 and lv_0061 run between the same two points: a duplicated line, or a loop of two.",lv_0440; lv_0061,-34.9894579,138.5981449
+14,Loop in a network meant to be radial,error,"lv_0420 closes a loop of 1.27 km through sw_lv01 (closed), tr_32, tr_16: a radial network should have an open point (a switch left open) on it.",lv_0420; sw_lv01,-34.9901514,138.5934325
+15,Phase mismatch,warn,"m_0004 is phase B but is joined to s_0004, phase A.",m_0004; s_0004,-34.9790336,138.594949
+16,Part of the network no feeder head reaches,warn,11 m of line around s_0005 with 1 meter is reached from no feeder head (sources).,s_0005,-34.979203,138.5986439
+17,Switch or fuse with no normal state,warn,Switch sw_lv02 has no normal state (open or closed) in NORMAL_STATE: it is traced as closed.,sw_lv02,-34.9823637,138.5972365
+18,Device joined to no line,warn,Switch sw_hv03 is not on any line. The nearest line is 1.46 m away; the tolerance is 0.5 m.,sw_hv03,-34.982516,138.5960405
+19,Feeder attribute disagrees with the lines,warn,"hv_007 says feeder FDR_CLG2, but the lines reach it from FDR_CLG1.",hv_007,-34.9831958,138.5890966
+20,Line end just short of another line,warn,"Line lv_0275 ends 1.4 m from lv_0150, beyond the 0.5 m tolerance: probably meant to join.",lv_0275; lv_0150,-34.9852391,138.5929042
+21,Part of the network no feeder head reaches,warn,59 m of line around lv_0275 with 2 meters is reached from no feeder head (sources).,lv_0275,-34.9852391,138.5929042
+22,Zero-length line,warn,lv_0439 has no length (0 mm).,lv_0439,-34.9860701,138.5969022
+23,Meter unusually far from its transformer,warn,"m_0759 is 663 m along the lines from tr_09, more than 500 m.",m_0759,-34.9869304,138.6007021
+24,Gap closed by the tolerance,info,"A gap of 0.3 m between lv_0026 and lv_0025, joined by the 0.5 m tolerance.",lv_0026; lv_0025,-34.9901548,138.5970328

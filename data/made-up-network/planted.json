@@ -1,0 +1,146 @@
+{
+ "note": "A made-up network on real streets. Faults planted on purpose, one of each kind the checks look for.",
+ "origin": [
+  -34.9855,
+  138.5965
+ ],
+ "counts": {
+  "meters": 1406,
+  "transformers": 33,
+  "lv_lines": 440,
+  "hv_lines": 416,
+  "switches": 13,
+  "ties": 10
+ },
+ "planted": [
+  {
+   "n": 1,
+   "fault": "tie_closed",
+   "what": "LV link sw_lv01 between tr_16 and tr_32 is recorded closed instead of open",
+   "ids": [
+    "sw_lv01",
+    "tr_16",
+    "tr_32"
+   ]
+  },
+  {
+   "n": 2,
+   "fault": "meter_off",
+   "what": "meter m_0042 sits 1.2 m past the end of its service line",
+   "ids": [
+    "m_0042",
+    "s_0042"
+   ]
+  },
+  {
+   "n": 3,
+   "fault": "service_short",
+   "what": "service line s_0005 stops 1.5 m short of the main",
+   "ids": [
+    "s_0005",
+    "m_0005"
+   ]
+  },
+  {
+   "n": 4,
+   "fault": "lv_gap",
+   "what": "low voltage main lv_0275 starts 1.4 m short of the corner, so its 2 meters are cut off",
+   "ids": [
+    "lv_0275",
+    "m_0582",
+    "m_0605"
+   ]
+  },
+  {
+   "n": 5,
+   "fault": "lv_gap_small",
+   "what": "low voltage main lv_0025 starts 0.3 m from the corner, joined by the 0.5 m tolerance",
+   "ids": [
+    "lv_0025"
+   ]
+  },
+  {
+   "n": 6,
+   "fault": "attribute",
+   "what": "meter m_0001 records tr_12 but its service joins tr_07's main",
+   "ids": [
+    "m_0001"
+   ]
+  },
+  {
+   "n": 7,
+   "fault": "attribute",
+   "what": "meter m_0755 records tr_13 but its service joins tr_06's main",
+   "ids": [
+    "m_0755"
+   ]
+  },
+  {
+   "n": 8,
+   "fault": "meter_far",
+   "what": "meter m_0759 is digitised about 600 m from its lot, its service line drawn out to it",
+   "ids": [
+    "m_0759"
+   ]
+  },
+  {
+   "n": 9,
+   "fault": "no_state",
+   "what": "LV link sw_lv02 between tr_18 and tr_11 has no normal state, so it is traced as closed",
+   "ids": [
+    "sw_lv02",
+    "tr_18",
+    "tr_11"
+   ]
+  },
+  {
+   "n": 10,
+   "fault": "phase",
+   "what": "meter m_0004 is recorded on phase B; its service line is phase A",
+   "ids": [
+    "m_0004"
+   ]
+  },
+  {
+   "n": 11,
+   "fault": "duplicate_id",
+   "what": "meters m_0006 and m_0709 both carry the id m_0006",
+   "ids": [
+    "m_0006"
+   ]
+  },
+  {
+   "n": 12,
+   "fault": "zero_length",
+   "what": "low voltage segment lv_0439 has no length",
+   "ids": [
+    "lv_0439"
+   ]
+  },
+  {
+   "n": 13,
+   "fault": "feeder",
+   "what": "11 kV span hv_007 is labelled FDR_CLG2 but is on FDR_CLG1",
+   "ids": [
+    "hv_007"
+   ]
+  },
+  {
+   "n": 14,
+   "fault": "duplicate_line",
+   "what": "low voltage span lv_0440 duplicates lv_0061",
+   "ids": [
+    "lv_0440",
+    "lv_0061"
+   ]
+  },
+  {
+   "n": 15,
+   "fault": "switch_off",
+   "what": "recloser sw_hv03 sits 2.5 m off the 11 kV line",
+   "ids": [
+    "sw_hv03"
+   ]
+  }
+ ]
+}

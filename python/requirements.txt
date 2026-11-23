@@ -1,0 +1,4 @@
+networkx>=3.3
+shapely>=2.0
+pandas>=2.0
+jupyter

@@ -1,0 +1,23 @@
+Which meters hang off this transformer? Network checks in Plotlay.
+Copyright 2026 Craig Muldoon. Made with Plotlay (https://www.getplotlay.com).
+
+CODE
+  python/ and scripts/ are licensed under the MIT licence (LICENSE).
+
+THE MADE-UP NETWORK (data/made-up-network/)
+  An electricity network invented for this showcase and drawn along the streets of Colonel Light Gardens, Adelaide.
+  Street positions are from OpenStreetMap (c) OpenStreetMap contributors, available under the Open Database Licence
+  (https://opendatacommons.org/licenses/odbl/). The network itself (feeders, transformers, switches, meters and the
+  15 planted faults in planted.json) is ours and describes nothing real. Our part is Creative Commons Attribution 4.0
+  International (LICENSE-DATA).
+
+CITY OF GOLD COAST DATA (data/gold-coast-burleigh/)
+  Water and stormwater assets around Burleigh Heads, downloaded 24 November 2026 with scripts/download_gold_coast.py,
+  unchanged. Source: City of Gold Coast, licensed under Creative Commons Attribution 3.0 Australia
+  (https://creativecommons.org/licenses/by/3.0/au/); water service connections under Creative Commons Attribution 4.0
+  International (https://creativecommons.org/licenses/by/4.0/).
+
+OURS (data/checks/, visuals/)
+  Plotlay's check lists and the pictures: Creative Commons Attribution 4.0 International (LICENSE-DATA). The Gold Coast
+  check list is made from City of Gold Coast data: keep its source with it. Map pictures: base map (c) OpenStreetMap
+  contributors, tiles Protomaps.
