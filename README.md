@@ -30,7 +30,7 @@ The faults are the kinds that turn up in real exports: a tie recorded closed, a 
 
 ## The checks
 
-`data/checks/` holds the lists from the Network panel's CSV and Excel buttons, for both networks: a row per issue with its number, check, severity, what was found, the ids and the latitude and longitude.
+`data/checks/` holds the lists from the Network panel's CSV and Excel buttons, for both networks: a row per issue with its number, check, severity, what was found, the ids and the latitude and longitude. They open in Power BI Desktop with Get data, Text/CSV or Excel workbook; the latitude and longitude go on a map visual.
 
 On real data a flag is a place to look, not a fault proven on the ground. On the Gold Coast extract the checks found 156 groups of lines whose FROM_SAPID or TO_SAPID names an asset more than 2 m from the line's nearest end, 11 valves 2.1 m to 75 m from the nearest line, 10 main ends 0.62 m to 2.32 m short of another main, 10 pieces that no supply point reaches and 3 service lines that join nothing, plus 993 gaps of up to 0.5 m that the tolerance closed (information only).
 
